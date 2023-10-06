@@ -1,0 +1,61 @@
+body { 
+
+    display: grid; /* define the grid using the display property*/
+
+    height: 200px; /* set a height and width of the grid*/
+/* set the grid template areas with appropriate names */
+  /* head is written twoce to imply 2 columns */
+  
+    grid-template-areas: "head head head" 
+
+                         "nav  main main" 
+
+                         "footer  footer footer"; 
+  
+  /* add sizes for rows and columns */
+
+    grid-template-rows: 30px 1fr 30px; 
+
+    grid-template-columns: 150px 1fr; 
+
+  } 
+
+   
+
+  header { 
+
+    grid-area: head; 
+
+    background-color: lightsalmon; 
+
+  } 
+
+   
+
+  .nav-bar { 
+
+    grid-area: nav; 
+
+    background-color: lightblue; 
+
+  } 
+
+   
+
+  main { 
+
+    grid-area: main; 
+
+    background-color: lightyellow; 
+
+  } 
+
+   
+
+   footer { 
+
+    grid-area: footer; 
+
+    background-color: firebrick; 
+
+  } 
